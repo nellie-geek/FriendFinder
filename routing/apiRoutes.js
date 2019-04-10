@@ -16,7 +16,7 @@ module.exports = function(app) {
         var userScores = userInput.scores;
         var bestMatch = {
             name: "",
-            picture: "",
+            photo: "",
             diff: 1000
         }
         var totalDiff = 0;
@@ -30,7 +30,7 @@ module.exports = function(app) {
             }
             if (totalDiff < bestMatch.diff) {
                 bestMatch.name = currFriend.name;
-                bestMatch.picture = currFriend.picture;
+                bestMatch.photo = currFriend.photo;
                 bestMatch.diff = totalDiff;
             }
         } 
